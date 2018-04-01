@@ -3,6 +3,6 @@ class Character < ActiveRecord::Base
   belongs_to :show
 
   def say_that_thing_you_say
-    catchphrase
+    "#{name} always says: #{catchphrase}"
   end
 end
